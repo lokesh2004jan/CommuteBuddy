@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.commutebuddy"
+    namespace = "com.lokeshdawkar.commutebuddy"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.commutebuddy"
+        applicationId = "com.lokeshdawkar.commutebuddy"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
