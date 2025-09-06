@@ -1,0 +1,62 @@
+Women’s Safety + Commute Buddy App – Project Description
+
+Overview
+A free Android app designed for women’s safety and secure commuting. The app provides real-time location tracking, geofencing, SOS alerts, shake detection for emergencies, and commute buddy features. Built with Firebase backend + OpenStreetMap (free) for maps, ensuring no heavy costs for an individual developer.
+
+Features
+
+1. User Authentication (Firebase Auth)
+- Signup/Login with Email/Phone/Google.
+- Secure storage of user details.
+
+2. Trusted Contacts (Firebase Database)
+- Users can add family/friends as emergency contacts.
+- Contacts stored securely in Firebase Realtime Database/Firestore.
+
+3. Live Location Sharing (OpenStreetMap + Firebase)
+- User’s live location shared with trusted contacts.
+- OpenStreetMap (OSMDroid/Mapbox SDK) used instead of Google Maps (completely free).
+
+4. Geofencing (Safe Zones + Alerts)
+- Define Safe Zones (home, office, college).
+- If the user leaves a safe zone at odd hours -> send alert to contacts.
+- Firebase Cloud Messaging (FCM) used for push notifications.
+
+5. SOS Trigger (Shake to Alert)
+- When the phone is shaken strongly, the app will:
+  - Start audio recording automatically (store in Firebase or locally).
+  - Send an emergency SMS with live location to trusted contacts.
+  - Optionally call the primary emergency contact.
+
+6. Commute Buddy Feature
+- Users can find trusted commute partners (friends, colleagues, classmates).
+- Option to share route and ETA securely.
+
+7. Emergency Services Integration
+- Direct button to call police helpline (100 / 112 in India).
+- Option to send location to nearest NGO/volunteer group (future expansion).
+
+Tech Stack
+- Frontend (Android): Kotlin + Jetpack Compose
+- Backend: Firebase (Auth, Firestore/Realtime Database, Cloud Messaging, Storage)
+- Maps & Location: OpenStreetMap (OSMDroid SDK) -> free alternative to Google Maps
+- Geofencing: Android Location Services + Firebase for triggers
+- SOS Messaging: SMS Manager API + Firebase Cloud Messaging
+- Audio Recording: MediaRecorder API (triggered on shake)
+
+Flow
+1. User logs in -> adds emergency contacts.
+2. Location runs in background -> updates Firebase.
+3. If user exits geofence -> notify trusted contacts.
+4. If phone is shaken -> auto-record audio + send SMS with live location.
+5. Trusted contacts can open the map link to see live tracking.
+6. Commute Buddy feature lets users share route with a friend.
+
+Free APIs / Services Used
+- Firebase (Free tier – 50K reads/writes per day, enough for small apps).
+- OpenStreetMap (OSMDroid SDK) -> 100% free, no payment required.
+- Android SMS Manager API -> free, sends SMS via user’s SIM.
+- Android MediaRecorder API -> built-in, no extra cost.
+- Android Location Services (Geofencing API) -> built-in.
+
+This document is ready to be saved as project_description.txt and given to an AI app builder to generate the app.

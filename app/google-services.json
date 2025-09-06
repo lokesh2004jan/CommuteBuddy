@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "320799890111",
+    "firebase_url": "https://blinkit-5b3c2-default-rtdb.firebaseio.com",
+    "project_id": "blinkit-5b3c2",
+    "storage_bucket": "blinkit-5b3c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320799890111:android:17b8064f19e8ef3164040a",
+        "android_client_info": {
+          "package_name": "com.example.commutebuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo5oiR5ePjLKsBi69e3vGDqBCMhRmGVmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
